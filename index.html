@@ -11,21 +11,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Chonburi&family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="text-dark">
+<body class="bg-body text-dark">
 
   <!-- Header -->
-  <header class="w-100 shadow-sm nav-bg">
-    <nav class="navbar navbar-expand-lg py-4">
-
+  <header class="w-100 shadow-sm bg-body-tertiary border-bottom border-warning-subtle">
+    <nav class="navbar navbar-expand-lg py-2 py-lg-3">
       <div class="container">
-        <img src="images/logo.png" alt="Mindful Lib Logo" height="100" class="d-inline-block align-middle rounded">
-        <a class="navbar-brand  text-black px-5 py-3 fw-bold text-decoration-none rounded-3 fs-5 m-0" href="#">
-          <h3>MINDFUL LIB</h3>
+        <a class="navbar-brand d-flex align-items-center gap-2 gap-md-3 m-0 text-dark" href="#home">
+          <img src="images/logo.png" alt="Mindful Lib Logo" height="64" class="d-inline-block rounded">
+          <span class="Chonburi fs-4">MINDFUL LIB</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -34,21 +33,16 @@
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
-          <!-- เพิ่ม text-nowrap, flex-row และปรับระยะห่าง gap-2 gap-lg-4 -->
-          <ul
-            class="navbar-nav ms-auto align-items-center flex-row flex-wrap justify-content-center gap-2 gap-lg-4 me-lg-4 mt-3 mt-lg-0 fs-6 text-nowrap">
-            <li class="nav-item"><a class="nav-link px-2 px-lg-3 text-dark" href="#home">หน้าแรก</a></li>
-            <li class="nav-item"><a class="nav-link px-2 px-lg-3 text-dark" href="#summary">เรื่องย่อ</a></li>
-            <li class="nav-item"><a class="nav-link px-2 px-lg-3 text-dark" href="#virtues">7 ปรัชญาชีวิต</a></li>
-            <li class="nav-item"><a class="nav-link px-2 px-lg-3 text-dark" href="#author">เกี่ยวกับผู้เขียน</a></li>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 me-lg-3 mt-3 mt-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link px-lg-3 text-dark" href="#home">หน้าแรก</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 text-dark" href="#summary">เรื่องย่อ</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 text-dark" href="#virtues">7 ปรัชญาชีวิต</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 text-dark" href="#author">เกี่ยวกับผู้เขียน</a></li>
           </ul>
-          <div class="d-none d-lg-block">
-            <a class="btn button-bg text-white rounded-3 px-5 py-2 fs-5" href="#review">รีวิว</a>
+          <div class="text-center mt-3 mt-lg-0 pb-2 pb-lg-0">
+            <a class="btn btn-dark rounded-3 px-5 py-2 fs-5" href="#review">รีวิว</a>
           </div>
         </div>
-      </div>
-      </div>
-
       </div>
     </nav>
   </header>
@@ -60,30 +54,30 @@
         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
       <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
 
-      <div class="container position-relative mt-5 pt-5">
+      <div class="container position-relative py-5">
         <!-- แนะนำให้เปลี่ยน align-items-stretch เป็น align-items-center เพื่อให้รูปกับข้อความอยู่กึ่งกลางแนวตั้งตรงกัน -->
-        <div class="row align-items-center justify-content-center g-4 mt-4">
+        <div class="row align-items-center justify-content-center g-4 g-lg-5">
 
           <!-- คอลัมน์ 1: ข้อความหลัก (จอมือถืออยู่บน order-1 / จอ lg อยู่ขวา order-lg-2) -->
           <div class="col-12 col-md-6 col-lg-7 order-1 order-lg-2">
             <div class="d-flex flex-column justify-content-between h-100 text-center text-lg-start">
               <div data-aos="fade-left" data-aos-duration="1500">
 
-                <h1 class="display-2 fw-bold lh-1 text-uppercase mb-0">
+                <h1 class="display-3 fw-bold lh-1 text-uppercase mb-0">
                   THE MONK<br>
                   WHO SOLD<br>
                   HIS FERRARI
                 </h1>
               </div>
               <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="fs-5 mb-0 text-uppercase mt-4 mb-4">
+                <p class="fs-5 text-uppercase my-4">
                   "นิทานเปรียบเทียบเกี่ยวกับการทําความฝันให้เป็นจริงและการเข้าถึงโชคชะตาของตนเอง" <br>
                   By Robin S. Sharma
                 </p>
               </div>
               <div>
                 <div data-aos="zoom-in" data-aos-duration="2000">
-                  <a href="#summary" class="btn btn-light bg-opacity-75 text-black rounded-5 px-4 py-2 border-0">
+                  <a href="#summary" class="btn button-bg rounded-pill px-5 py-2 fw-semibold shadow text-white bg-opacity-75">
                     เพิ่มเติม
                   </a>
                 </div>
@@ -94,7 +88,7 @@
           <!-- คอลัมน์ 2: รูปภาพหน้าปกหนังสือ (จอมือถืออยู่ล่าง order-2 / จอ lg อยู่ซ้าย order-lg-1) -->
           <div class="col-12 col-md-5 col-lg-4 text-center order-2 order-lg-1 mt-5 mt-lg-0">
             <div data-aos="fade-right" data-aos-duration="1500">
-              <img src="images/TheMonk.jpg" alt="The Monk Who Sold His Ferrari" class="img-fluid shadow-lg w-75">
+              <img src="images/TheMonk.jpg" alt="The Monk Who Sold His Ferrari" class="img-fluid shadow-lg rounded-3 w-75">
             </div>
           </div>
 
@@ -110,7 +104,7 @@
 
           <!-- คอลัมน์ซ้าย (ขนาด lg-7) -->
           <div class="col-12 col-lg-7 text-start">
-            <p class="text-uppercase text-secondary fw-semibold mb-2">Book Summary</p>
+            <p class="text-uppercase text-warning-emphasis fw-semibold mb-2">Book Summary</p>
             <h2 class="display-6 fw-bold mb-3">The Monk Who Sold His Ferrari</h2>
             <p class="lead mb-4">
               <strong>Julian Mantle</strong><br>
@@ -120,7 +114,7 @@
               เพื่อค้นหาความหมายที่แท้จริงของชีวิต จนได้พบกับ 'เหล่าปราชญ์แห่งศิวานะ' (Sages of Sivana)
               บนเทือกเขาหิมาลัย และนําปัญญาโบราณกลับมาถ่ายทอดให้แก่เพื่อนทนายความรุ่นน้อง"
             </p>
-            <a href="#virtues" class="btn button-bg  text-white btn-outline-custom-dark rounded-pill px-4">
+            <a href="#virtues" class="btn btn-dark rounded-pill px-4 px-md-5">
               เริ่มค้นหาตัวเอง
             </a>
           </div>
@@ -134,11 +128,11 @@
                 class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
 
               <!-- Overlay สีขาวโปร่งแสง (ช่วยบังแดด/ลวดลายรูป ให้ข้อความอ่านง่าย) -->
-              <div class="position-absolute top-0 start-0 w-100 h-100 bg-white bg-opacity-85"></div>
+              <div class="position-absolute top-0 start-0 w-100 h-100 bg-white bg-opacity-75"></div>
 
               <!-- เนื้อหาการ์ด (ใช้ z-1 เพื่อให้อยู่ด้านบนรูปและ Overlay) -->
               <div class="position-relative z-1">
-                <h3 class="h5 fw-bold mb-4 text-custom-dark d-flex align-items-center gap-2">
+                <h3 class="h5 fw-bold mb-4 text-dark d-flex align-items-center gap-2">
                   <span class="fs-4">❓</span>
                   คุณเคยตั้งคำถามเหล่านี้กับตัวเองไหม?
                 </h3>
@@ -159,7 +153,11 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- Section 2: 7 Virtues -->
     <section id="virtues" class="py-5 position-relative overflow-hidden">
 
@@ -174,7 +172,7 @@
       <div class="container py-5 position-relative">
 
         <div class="text-center mb-5">
-          <p class="text-secondary fw-semibold mb-2">The 7 Virtues of Enlightened Living</p>
+          <p class="text-warning-emphasis text-uppercase fw-semibold mb-2">The 7 Virtues of Enlightened Living</p>
           <h2 class="display-6 fw-bold mb-3">7 หลักปรัชญาเปลี่ยนชีวิต</h2>
           <p class="text-secondary">แนวคิดสำคัญที่สามารถนำมาปรับใช้ในชีวิตประจำวัน</p>
         </div>
@@ -182,9 +180,9 @@
         <div class="row g-4">
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">01</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">01</span>
                 <h3 class="h5 fw-bold">Master Your Mind</h3>
                 <p class="text-secondary mb-0">
                   ฝึกจิตให้ทรงพลัง: จิตใจเหมือนสวนดอกไม้
@@ -195,9 +193,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">02</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">02</span>
                 <h3 class="h5 fw-bold">Follow Your Purpose</h3>
                 <p class="text-secondary mb-0">
                   ดำเนินชีวิตตามเป้าหมาย: ค้นหาพันธกิจของชีวิต
@@ -208,9 +206,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">03</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">03</span>
                 <h3 class="h5 fw-bold">Practice Kaizen</h3>
                 <p class="text-secondary mb-0">
                   ฝึกฝนและพัฒนาตนเองอย่างต่อเนื่อง:
@@ -221,9 +219,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">04</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">04</span>
                 <h3 class="h5 fw-bold">Live with Discipline</h3>
                 <p class="text-secondary mb-0">
                   มีวินัยในตนเอง: วินัยคือสะพานเชื่อมระหว่างเป้าหมายและความสำเร็จ
@@ -233,9 +231,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">05</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">05</span>
                 <h3 class="h5 fw-bold">Respect Your Time</h3>
                 <p class="text-secondary mb-0">
                   เคารพและบริหารเวลา: เวลาเป็นสิ่งมีค่า
@@ -246,9 +244,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">06</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">06</span>
                 <h3 class="h5 fw-bold">Selflessly Serve Others</h3>
                 <p class="text-secondary mb-0">
                   รับใช้ผู้อื่นด้วยความจริงใจ:
@@ -259,9 +257,9 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4 mx-md-auto">
-            <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
-                <span class="badge bg-custom-dark rounded-pill mb-3">07</span>
+                <span class="badge text-bg-warning rounded-pill mb-3">07</span>
                 <h3 class="h5 fw-bold">Embrace the Present</h3>
                 <p class="text-secondary mb-0">
                   อยู่กับปัจจุบัน: ความสุขไม่ได้อยู่ที่จุดหมาย
@@ -279,7 +277,7 @@
     <section id="why-this-book" class="py-5 bg-white">
       <div class="container py-5">
         <div class="text-center mb-5">
-          <p class="text-secondary fw-semibold mb-2">Why This Book?</p>
+          <p class="text-warning-emphasis text-uppercase fw-semibold mb-2">Why This Book?</p>
           <h2 class="display-6 fw-bold">ทำไมหนังสือเล่มนี้จึงควรถูกหยิบมาอ่าน</h2>
         </div>
 
@@ -287,7 +285,7 @@
 
           <!-- การ์ด 1 -->
           <div class="col">
-            <div class="h-100 p-4 border rounded-4 text-center">
+            <div class="h-100 p-4 border border-warning-subtle bg-body rounded-4 text-center shadow-sm" data-lift>
               <div class="display-4 mb-3">🧭</div>
               <h3 class="h5 fw-bold">เตือนสติเรื่อง "ความสำเร็จที่แท้จริง" ในชีวิต</h3>
               <p class="text-secondary">
@@ -300,7 +298,7 @@
 
           <!-- การ์ด 2 -->
           <div class="col">
-            <div class="h-100 p-4 border rounded-4 text-center">
+            <div class="h-100 p-4 border border-warning-subtle bg-body rounded-4 text-center shadow-sm" data-lift>
               <div class="display-4 mb-3">🧘🏻‍♂️</div>
               <h3 class="h5 fw-bold">ย่อยหลักปรัชญาตะวันออกให้เข้าใจง่ายและปรับใช้ได้จริง</h3>
               <p class="text-secondary">
@@ -313,7 +311,7 @@
 
           <!-- การ์ด 3 -->
           <div class="col">
-            <div class="h-100 p-4 border rounded-4 text-center">
+            <div class="h-100 p-4 border border-warning-subtle bg-body rounded-4 text-center shadow-sm" data-lift>
               <div class="display-4 mb-3">🌱</div>
               <h3 class="h5 fw-bold">เป็นคู่มือการทำ "Kaizen"</h3>
               <p class="text-secondary">
@@ -326,7 +324,7 @@
 
           <!-- การ์ด 4 -->
           <div class="col">
-            <div class="h-100 p-4 border rounded-4 text-center">
+            <div class="h-100 p-4 border border-warning-subtle bg-body rounded-4 text-center shadow-sm" data-lift>
               <div class="display-4 mb-3">❤️‍🩹</div>
               <h3 class="h5 fw-bold">ช่วยเยียวยาจิตใจจากภาวะ Burnout</h3>
               <p class="text-secondary">
@@ -342,7 +340,7 @@
     </section>
 
     <!-- Quote Carousel -->
-    <section class="py-5 position-relative overflow-hidden">
+    <section class="py-5 position-relative overflow-hidden bg-warning-subtle">
       <img src="images/Himalai.webp" alt="" aria-hidden="true"
         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
       <div class="position-relative container py-5">
@@ -352,7 +350,7 @@
 
             <div class="carousel-item active">
               <div class="mx-auto col-lg-8 px-5">
-                <i class="bi bi-quote display-1"></i>
+                <i class="bi bi-quote display-1 text-warning"></i>
 
                 <h5>ข้อจำกัดของชีวิต เป็นเพียงกำแพงที่จิตใจของคุณสร้างขึ้น...</h5>
                 <div data-aos="fade-up" data-aos-duration="1500">
@@ -365,7 +363,7 @@
 
             <div class="carousel-item">
               <div class="mx-auto col-lg-8 px-5">
-                <i class="bi bi-quote display-1"></i>
+                <i class="bi bi-quote display-1 text-warning"></i>
                 <h5> ความกลัวเป็นเพียงสัญญาณบอกว่า สิ่งที่คุณกำลังจะทำนั้น... </h5>
                 <div data-aos="fade-up" data-aos-duration="1500">
                   <p class="Chonburi display-6 fw-semibold">
@@ -402,7 +400,7 @@
     <section class="py-5 bg-light">
       <div class="container py-5">
         <div class="text-center mb-5">
-          <p class="text-secondary fw-semibold mb-2">Book Overview</p>
+          <p class="text-warning-emphasis text-uppercase fw-semibold mb-2">Book Overview</p>
           <h2 class="display-6 fw-bold">ข้อมูลหนังสือ</h2>
         </div>
 
@@ -410,24 +408,24 @@
           <table class="table table-bordered align-middle mb-0">
             <tbody>
               <tr>
-                <th class="w-25 p-4">ชื่อหนังสือ</th>
-                <td class="p-4">The Monk Who Sold His Ferrari (พระเฟอร์รารีและความหมายของชีวิต)</td>
+                <th class="w-25 p-3 p-lg-4 bg-warning-subtle">ชื่อหนังสือ</th>
+                <td class="p-3 p-lg-4">The Monk Who Sold His Ferrari (พระเฟอร์รารีและความหมายของชีวิต)</td>
               </tr>
               <tr>
-                <th class="p-4">ผู้เขียน</th>
-                <td class="p-4">Robin S. Sharma</td>
+                <th class="p-3 p-lg-4 bg-warning-subtle">ผู้เขียน</th>
+                <td class="p-3 p-lg-4">Robin S. Sharma</td>
               </tr>
               <tr>
-                <th class="p-4">ประเภท</th>
-                <td class="p-4">พัฒนาตนเอง / ปรัชญาการดำเนินชีวิต (Self-Help / Personal Growth)</td>
+                <th class="p-3 p-lg-4 bg-warning-subtle">ประเภท</th>
+                <td class="p-3 p-lg-4">พัฒนาตนเอง / ปรัชญาการดำเนินชีวิต (Self-Help / Personal Growth)</td>
               </tr>
               <tr>
-                <th class="p-4">จำนวนหน้า</th>
-                <td class="p-4">224 หน้า</td>
+                <th class="p-3 p-lg-4 bg-warning-subtle">จำนวนหน้า</th>
+                <td class="p-3 p-lg-4">224 หน้า</td>
               </tr>
               <tr>
-                <th class="p-4">จุดเด่น</th>
-                <td class="p-4">ถ่ายทอดปรัชญาตะวันออกผ่านโครงเรื่องแนวนิทาน (Fable) อ่านสนุก ปฏิบัติได้จริง</td>
+                <th class="p-3 p-lg-4 bg-warning-subtle">จุดเด่น</th>
+                <td class="p-3 p-lg-4">ถ่ายทอดปรัชญาตะวันออกผ่านโครงเรื่องแนวนิทาน (Fable) อ่านสนุก ปฏิบัติได้จริง</td>
               </tr>
             </tbody>
           </table>
@@ -439,7 +437,7 @@
     <section id="author" class="py-5 bg-white">
       <div class="container py-5">
         <div class="text-center mb-5">
-          <p class="text-secondary fw-semibold mb-2">About the Author</p>
+          <p class="text-warning-emphasis text-uppercase fw-semibold mb-2">About the Author</p>
           <h2 class="display-6 fw-bold">เกี่ยวกับ Robin S. Sharma</h2>
         </div>
 
@@ -450,7 +448,7 @@
 
                 <!-- ไอคอน/สัญลักษณ์ผู้เขียน -->
                 <div class="col-12 col-md-3 text-center">
-                  <i class="bi bi-person-circle display-1 text-dark"></i>
+                  <i class="bi bi-person-circle display-1 text-warning"></i>
                 </div>
 
                 <!-- รายละเอียดผู้เขียน -->
@@ -483,9 +481,9 @@
       <div class="container py-5">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <div class="card border-0 shadow-sm rounded-4">
+            <div class="card border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4 p-lg-5 text-center">
-                <p class="text-secondary fw-semibold mb-2">Book Review & Reflection</p>
+                <p class="text-warning-emphasis text-uppercase fw-semibold mb-2">Book Review & Reflection</p>
                 <h2 class="display-6 fw-bold mb-3">รีวิวและสรุปข้อคิดสำหรับผู้ใช้</h2>
 
                 <div class="fs-3 mb-4" aria-label="4.8 out of 5 stars">
@@ -504,12 +502,10 @@
         </div>
       </div>
     </section>
-    <section class="container py-4">
-      <div class="accordion" id="faqAccordion">
-        <!-- Accordion Item 1 -->
-
+    <section class="container py-5" id="faq">
+      <h2 class="text-center fw-bold mb-4">คำถามที่พบบ่อย?</h2>
+      <div class="accordion shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
         <div>
-          <h2 class="text-center fw-bold mb-3">คำถามที่พบบ่อย?</h2>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -584,8 +580,9 @@
       </div>
 
     </section>
-    <section>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <section class="bg-body-tertiary py-5">
+      <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
 
         <!-- Carousel Indicators -->
         <div class="carousel-indicators">
@@ -606,11 +603,11 @@
           </div>
 
           <div class="carousel-item">
-            <img src="images/c2.webp" class="d-block w-100" alt="Slide 2">
+            <img src="images/c2.webp" class="d-block w-100" loading="lazy" alt="Slide 2">
           </div>
 
           <div class="carousel-item">
-            <img src="images/c3.webp" class="d-block w-100" alt="Slide 3">
+            <img src="images/c3.webp" class="d-block w-100" loading="lazy" alt="Slide 3">
           </div>
         </div>
 
@@ -629,6 +626,7 @@
         </button>
 
       </div>
+      </div>
     </section>
   </main>
 
@@ -637,7 +635,7 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-md-6">
-          <h2 class="h5 fw-bold">Mindful Living Library</h2>
+          <h2 class="h5 fw-bold text-white">Mindful Living Library</h2>
           <p class="text-white-50 mb-0">
             รูปภาพจาก https://pixabay.com/th/
           </p>
@@ -645,8 +643,8 @@
 
         <div class="col-md-6">
           <p class="mb-2">จัดทำโดย: รัตนาวดี วิชาเกวียน 670510841</p>
-          <div class="d-flex gap-3">
-            <p class="mb-2">Social Links &amp; Source Credits</p>
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <p class="mb-0">Social Links &amp; Source Credits</p>
             <div class="d-flex gap-3">
               <a href="#" class="text-white fs-4" aria-label="Facebook">
                 <i class="bi bi-facebook"></i>
@@ -661,12 +659,61 @@
           </div>
         </div>
       </div>
+      <p class="text-white-50 small mb-0 mt-4">Copyright &copy; 2026 Web Technology Project - Book Recommendation Site</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ once: true });
+
+    // ---- ธีมสี: เปลี่ยนค่าตัวแปร CSS ของ Bootstrap ด้วย JavaScript ----
+    (function () {
+      const root = document.documentElement.style;
+      const rgb = h => { const n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255].join(','); };
+      const colors = {
+        'dark': '#332D32', 'light': '#F4ECDF', 'secondary': '#6E6268',
+        'primary': '#C8923B', 'warning': '#C8923B',
+        'body-bg': '#FBF7F0', 'body-color': '#332D32',
+        'tertiary-bg': '#F4ECDF', 'secondary-bg': '#EADFCB',
+        'link-color': '#8A5A12', 'link-hover-color': '#64400A'
+      };
+      Object.entries(colors).forEach(([k, v]) => {
+        root.setProperty('--bs-' + k, v);
+        root.setProperty('--bs-' + k + '-rgb', rgb(v));
+      });
+      ['primary', 'warning'].forEach(k => {
+        root.setProperty('--bs-' + k + '-bg-subtle', '#F6EBD6');
+        root.setProperty('--bs-' + k + '-border-subtle', '#E8D2A8');
+        root.setProperty('--bs-' + k + '-text-emphasis', '#6B4710');
+      });
+      root.setProperty('--bs-border-color', '#E6DCCB');
+
+      // ปุ่ม
+      const paint = (sel, v) => document.querySelectorAll(sel).forEach(el =>
+        Object.entries(v).forEach(([k, val]) => el.style.setProperty('--bs-btn-' + k, val)));
+      paint('.btn-dark', { 'bg': '#332D32', 'border-color': '#332D32', 'hover-bg': '#4C434B', 'hover-border-color': '#4C434B', 'active-bg': '#241F23', 'active-border-color': '#241F23' });
+      paint('.btn-warning', { 'bg': '#C8923B', 'border-color': '#C8923B', 'color': '#241F23', 'hover-bg': '#DDAA55', 'hover-border-color': '#DDAA55', 'hover-color': '#241F23', 'active-bg': '#B07D2C', 'active-border-color': '#B07D2C' });
+
+      // FAQ
+      const faq = document.getElementById('faqAccordion');
+      faq.style.setProperty('--bs-accordion-btn-focus-box-shadow', '0 0 0 .25rem rgba(200,146,59,.35)');
+      faq.style.setProperty('--bs-accordion-active-color', '#332D32');
+    })();
+
+    // ---- การ์ดลอยขึ้นเมื่อเอาเมาส์ชี้ ----
+    document.querySelectorAll('#virtues .card, [data-lift]').forEach(el => {
+      el.style.transition = 'transform .25s ease, box-shadow .25s ease';
+      el.addEventListener('mouseenter', () => { el.style.transform = 'translateY(-6px)'; el.classList.replace('shadow-sm', 'shadow'); });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; el.classList.replace('shadow', 'shadow-sm'); });
+    });
+
+    // ---- ปิดเมนูมือถืออัตโนมัติเมื่อกดลิงก์ ----
+    const mainNav = document.getElementById('mainNav');
+    mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      if (mainNav.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(mainNav).hide();
+    }));
   </script>
 </body>
 
