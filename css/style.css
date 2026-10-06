@@ -1,0 +1,37 @@
+h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.nav-bg {
+  background-color: aliceblue;
+}
+
+.button-bg {
+  background-color: #332D32
+}
+p,h5 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,h3 {
+  font-family: "Chonburi", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #332D32;
+}
+
+.Chonburi {
+font-family: "Chonburi",
+serif;
+font-weight: 400;
+font-style: normal;
+}
+
+ิbody {
+background-color: aliceblue;
+}
