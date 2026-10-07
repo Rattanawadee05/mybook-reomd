@@ -10,9 +10,10 @@ h1 {
 }
 
 .button-bg {
-  background-color: #332D32
+  background-color: white;
+
 }
-p,h5 {
+p,h4,h5,h7 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-style: normal;
