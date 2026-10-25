@@ -4,8 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mindful Living Library - The Monk Who Sold His Ferrari">
-  <title>Mindful book | The Monk Who Sold His Ferrari</title>
+
+  <!--
+    SEO KEYWORDS
+    Keyword หลัก  : 1) หมดไฟในการทำงาน   2) หนังสือพัฒนาตนเอง
+    Keyword รอง   : 1) Robin Sharma   2) 7 หลักปรัชญาชีวิต   3) การบริหารเวลา
+    หมายเหตุ: ไม่ใช้ชื่อหนังสือเป็น keyword
+  -->
+  <title>หมดไฟในการทำงาน? ชวนอ่านหนังสือพัฒนาตนเองเพื่อทบทวนชีวิต | Mindful Book</title>
+  <meta name="description" content="กำลังหมดไฟในการทำงานอยู่หรือเปล่า? ชวนทำความรู้จักหนังสือพัฒนาตนเองของ Robin Sharma กับ 7 หลักปรัชญาชีวิตและแนวคิดการบริหารเวลาที่นำไปปรับใช้ได้จริง">
+  <meta name="keywords" content="หมดไฟในการทำงาน, หนังสือพัฒนาตนเอง, Robin Sharma, 7 หลักปรัชญาชีวิต, การบริหารเวลา">
+  <meta name="author" content="รัตนาวดี วิชาเกวียน">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:title" content="เมื่อชีวิตเริ่มเหนื่อยล้า หนังสือเล่มนี้อาจช่วยให้คุณมองอะไรต่างไป | Mindful Book">
+  <meta property="og:description" content="ทำความรู้จักหนังสือของ Robin Sharma ที่ชวนให้กลับมาทบทวนเป้าหมายชีวิต พร้อม 7 แนวคิดเรื่องความคิด วินัย และการใช้เวลา ที่นำไปลองปรับใช้ได้ในทุกวัน">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="เมื่อชีวิตเริ่มเหนื่อยล้า หนังสือเล่มนี้อาจช่วยให้คุณมองอะไรต่างไป | Mindful Book">
+  <meta name="twitter:description" content="ทำความรู้จักหนังสือของ Robin Sharma ที่ชวนให้กลับมาทบทวนเป้าหมายชีวิต พร้อม 7 แนวคิดเรื่องความคิด วินัย และการใช้เวลา ที่นำไปลองปรับใช้ได้ในทุกวัน">
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,16 +31,143 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Chonburi&family=Shrikhand&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-</head>
 
-<style id="js-generated-style"></style>
+  <!-- ฟอนต์ ขนาดตัวอักษร และสีตัวอักษร (โหลดหลัง style.css เพื่อให้มีผลเหนือกฎเดิม) -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Structured data: Book + FAQPage (รองรับ AEO / Rich results) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Book",
+      "name": "The Monk Who Sold His Ferrari",
+      "author": {
+        "@type": "Person",
+        "name": "Robin Sharma"
+      },
+      "genre": "Self-help",
+      "numberOfPages": 224,
+      "description": "นิทานเปรียบเทียบเกี่ยวกับการค้นหาความหมายของชีวิตและ 7 หลักปรัชญาชีวิต"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "หนังสือเกี่ยวกับเรื่องอะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "เป็นนิทานของ Robin Sharma ที่เล่าถึง Julian Mantle ทนายความมือทองที่หัวใจวายกลางศาล เขาเลยตัดสินใจขายรถเฟอร์รารี่แล้วเดินทางไปหิมาลัยเพื่อหาความหมายของชีวิต ก่อนจะกลับมาเล่า 7 หลักปรัชญาชีวิตที่ได้เรียนรู้ให้คนอื่นฟัง"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เหมาะกับใคร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "เหมาะกับคนที่หมดไฟในการทำงาน (Burnout) หรือทำงานหนักจนลืมดูแลสุขภาพและใจตัวเอง รวมถึงคนที่มัวไล่ตามความสำเร็จและอยากหาสมดุลระหว่างงานกับความสุขในใจ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ต้องมีพื้นฐานหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ต้องมีเลย หนังสือเล่าเป็นนิทาน อ่านง่าย ยาวประมาณ 224 หน้า ไม่ต้องเคยรู้จักปรัชญาตะวันออกหรือฝึกสมาธิมาก่อนก็อ่านเข้าใจ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ได้ประโยชน์อะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ได้แนวทาง 7 ข้อที่ค่อย ๆ ลองทำตามได้ เช่น ฝึกดูแลความคิด ตั้งเป้าหมาย พัฒนาตัวเองทีละนิดแบบ Kaizen มีวินัย และรู้จักใช้เวลาให้คุ้มค่า แนวคิดเรื่องการบริหารเวลาและการอยู่กับปัจจุบันอาจช่วยให้เราเห็นสิ่งสำคัญในชีวิตชัดขึ้น โดยเฉพาะในวันที่รู้สึกหมดไฟในการทำงาน"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7 หลักปรัชญาชีวิตใน The Monk Who Sold His Ferrari มีอะไรบ้าง?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "มี Master Your Mind (ฝึกจิตให้ทรงพลัง), Follow Your Purpose (ใช้ชีวิตตามเป้าหมาย), Practice Kaizen (พัฒนาตัวเองต่อเนื่อง), Live with Discipline (มีวินัย), Respect Your Time (เคารพเวลา), Selflessly Serve Others (แบ่งปันผู้อื่น) และ Embrace the Present (อยู่กับปัจจุบัน)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The Monk Who Sold His Ferrari เป็นเรื่องจริงหรือนิยาย?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "เป็นนิทานเปรียบเทียบ (Fable) ที่ผู้เขียนแต่งขึ้น Julian Mantle เป็นตัวละครสมมติ แต่แนวคิดในเล่มลองนำไปใช้กับชีวิตจริงได้"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kaizen คืออะไร และเกี่ยวกับหนังสือเล่มนี้อย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kaizen เป็นแนวคิดจากญี่ปุ่น แปลว่าการปรับปรุงให้ดีขึ้นทีละนิดอย่างต่อเนื่อง ในหนังสือใช้กับทั้งร่างกาย จิตใจ และความคิด ขอแค่ดีขึ้นกว่าเมื่อวานนิดเดียวก็พอ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เทคนิค “Heart of the Rose” ทำอย่างไรในชีวิตประจำวัน?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ทำได้ง่าย ๆ ลองนั่งนิ่ง ๆ แล้วมองดอกไม้ เทียน หรือแค่ตามลมหายใจวันละประมาณ 5 นาที ถ้ามีความคิดลบหรือเรื่องเครียดโผล่เข้ามา ก็ค่อย ๆ พาความสนใจกลับมาที่จุดเดิม"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "รับมือกับความเครียดและความคิดลบได้อย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ลองใช้เทคนิค “Opposomatic” คือสลับความคิดทันทีที่รู้ตัวว่ากำลังคิดลบ ให้หยุด แล้วหันไปนึกถึงเรื่องดี ๆ หรือสิ่งที่รู้สึกขอบคุณแทน"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ป้องกันการหมดไฟในการทำงานและรักษาความต่อเนื่องได้อย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ลองทำ “Ritual of Solitude” คือแบ่งเวลา 10–15 นาทีต่อวันอยู่กับตัวเองเงียบ ๆ ทบทวนเป้าหมายชีวิต แล้วจดบันทึกไว้ จะช่วยให้ไม่หลงทางและมีแรงไปต่อ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "อยากมีวินัยแบบ Robin Sharma แต่ตื่นตี 5 ไม่ไหว ควรทำอย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ต้องรีบตื่นตี 5 ก็ได้ เริ่มจากตื่นเร็วขึ้นแค่ 15–30 นาที แล้วใช้เวลานั้นอ่านหนังสือ ออกกำลังกาย หรือนั่งสงบใจ โดยยังไม่ต้องหยิบมือถือขึ้นมาดู"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "หมดไฟในการทำงาน อ่านหนังสือเล่มนี้ช่วยได้จริงไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "หนังสือให้แนวคิดและวิธีฝึกเล็ก ๆ ที่ช่วยให้พักและตั้งหลักได้ เช่น Ritual of Solitude และ Kaizen แต่ไม่ใช่การรักษาทางการแพทย์ ถ้าเหนื่อยล้าหรือเครียดมากจนกระทบชีวิตประจำวัน ควรปรึกษาผู้เชี่ยวชาญด้วย"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 
 <body class="bg-light text-dark">
+
+  <!-- แถบแสดงความคืบหน้าการอ่าน -->
+  <div class="progress fixed-top rounded-0 bg-transparent" id="readProgress" role="progressbar"
+    aria-label="ความคืบหน้าการอ่านหน้าเว็บ" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="progress-bar bg-warning"></div>
+  </div>
 
   <!-- NAVBAR -->
   <header>
@@ -30,7 +175,7 @@
       <div class="container py-2">
         <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
           <img src="images/logo.png" alt="Mindful Lib Logo" width="48" height="48" class="rounded-3 object-fit-cover">
-          <span>MINDFUL <span class="text-warning">BOOK</span></span>
+          <span>MINDFUL <span class="text-warning-emphasis">BOOK</span></span>
         </a>
 
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
@@ -44,6 +189,7 @@
             <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#summary">เรื่องย่อ</a></li>
             <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#virtues">7 ปรัชญาชีวิต</a></li>
             <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#author">ผู้เขียน</a></li>
+            <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#answers">ถาม-ตอบ</a></li>
             <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
               <a class="btn btn-dark rounded-pill px-4" href="#review">รีวิวหนังสือ</a>
             </li>
@@ -67,21 +213,16 @@
           <div class="col-12 col-lg-7 order-1 order-lg-2 text-center text-lg-start">
             <div class="p-lg-3">
               <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">
-                BOOK RECOMMENDATION
+                หนังสือพัฒนาตนเองสำหรับคนหมดไฟ
               </span>
               <div data-aos="fade-left" data-aos-duration="1500">
                 <h1 class="display-2 lh-1 mb-4">
-                  THE MONK<br>
-                  WHO SOLD<br>
-                  HIS FERRARI
+                  กำลังหมดไฟในการทำงานอยู่หรือเปล่า?<br>
+                  <span class="fs-2">ลองทบทวนชีวิตผ่านหนังสือพัฒนาตนเอง</span>
                 </h1>
+                <p class="text-white opacity-75 mb-3">แนะนำหนังสือ The Monk Who Sold His Ferrari</p>
               </div>
-              <div data-aos="fade-up" data-aos-duration="1500">
-                <p class="lead fw-normal mb-4 fs-5">
-                  “เรื่องราวของการค้นหาความหมายของชีวิต ความสำเร็จ<br class="d-none d-md-block">
-                  และความสุขที่แท้จริง”
-                </p>
-              </div>
+              
               <div data-aos="fade-up" data-aos-duration="1500">
                 <p class="fs-5 mb-4">
                   <span class="text-white fw-semibold">By Robin S. Sharma</span>
@@ -95,7 +236,7 @@
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1500">
                   <a href="#virtues" class="btn btn-outline-light btn-lg rounded-pill px-4">
-                    ดู 7 ปรัชญาชีวิต
+                    ดู 7 หลักปรัชญาชีวิต
                   </a>
                 </div>
               </div>
@@ -103,9 +244,9 @@
           </div>
 
           <div class="col-10 col-sm-8 col-md-6 col-lg-4 order-2 order-lg-1 text-center">
-            <div class="bg-white bg-opacity-10 rounded-5 p-3 p-md-4 shadow-lg">
+            <div id="heroCover" class="bg-white bg-opacity-10 border border-warning border-opacity-50 rounded-5 p-3 p-md-4 shadow-lg">
               <div data-aos="fade-right" data-aos-duration="1500">
-                <img src="images/TheMonk.jpg" alt="The Monk Who Sold His Ferrari" class="img-fluid rounded-4 shadow-lg">
+                <img src="images/TheMonk.jpg" alt="ปกหนังสือ The Monk Who Sold His Ferrari โดย Robin Sharma" class="img-fluid rounded-4 shadow-lg">
               </div>
             </div>
           </div>
@@ -115,25 +256,75 @@
     </section>
 
     <!-- QUICK STATS -->
-    <section class="bg-dark text-white py-4">
+    <section class="bg-dark text-white py-4 py-md-5">
       <div class="container">
         <div class="row text-center g-3">
           <div class="col-6 col-lg-3">
-            <div class="fs-2 fw-bold text-white">7</div>
-            <div class="small text-white-50">หลักปรัชญาชีวิต</div>
+            <div class="display-6 fw-bold text-warning" data-count="7">7</div>
+            <div class="small text-white opacity-75">หลักปรัชญาชีวิต</div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="fs-2 fw-bold text-white">224</div>
-            <div class="small text-white-50">จำนวนหน้า</div>
+            <div class="display-6 fw-bold text-warning" data-count="224">224</div>
+            <div class="small text-white opacity-75">จำนวนหน้า</div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="fs-2 fw-bold text-white">4.8/5</div>
-            <div class="small text-white-50">คะแนนรีวิว</div>
+            <div class="display-6 fw-bold text-warning" data-count="4.8" data-decimals="1" data-suffix="/5">4.8/5</div>
+            <div class="small text-white opacity-75">คะแนนรีวิว</div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="fs-2 fw-bold text-white">1</div>
-            <div class="small text-white-50">คำถามสำคัญ: ชีวิตที่เราอยากใช้</div>
+            <div class="display-6 fw-bold text-warning">1</div>
+            <div class="small text-white opacity-75">คำถามสำคัญ: ชีวิตที่เราอยากใช้</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AEO: ตอบ 4 คำถามหลัก -->
+    <section id="answers" class="py-5 bg-light" aria-labelledby="answers-title">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">QUICK ANSWERS</span>
+          <h2 id="answers-title" class="display-6 fw-bold mb-3">ก่อนอ่าน มาดูกันว่าหนังสือพัฒนาตนเองเล่มนี้พูดถึงอะไร</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
+          <p class="text-secondary">สรุปเรื่องที่หลายคนอยากรู้ ตั้งแต่เนื้อหาไปจนถึงสิ่งที่อาจนำกลับไปใช้ในชีวิตประจำวัน</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col" data-aos="fade-up">
+        <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+          <div class="card-body p-4">
+            <div class="fs-2 mb-2">📖</div>
+            <h3 class="h5 fw-bold">เรื่องราวในหนังสือเป็นอย่างไร?</h3>
+            <p class="text-secondary mb-0">เป็นนิทานของ Robin Sharma ที่เล่าถึง Julian Mantle ทนายความมือทองที่หัวใจวายกลางศาล เขาเลยตัดสินใจขายรถเฟอร์รารี่แล้วเดินทางไปหิมาลัยเพื่อหาความหมายของชีวิต ก่อนจะกลับมาเล่า 7 หลักปรัชญาชีวิตที่ได้เรียนรู้ให้คนอื่นฟัง</p>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-aos="fade-up">
+        <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+          <div class="card-body p-4">
+            <div class="fs-2 mb-2">🙋</div>
+            <h3 class="h5 fw-bold">เหมาะกับใคร?</h3>
+            <p class="text-secondary mb-0">เหมาะกับคนที่หมดไฟในการทำงาน (Burnout) หรือทำงานหนักจนลืมดูแลสุขภาพและใจตัวเอง รวมถึงคนที่มัวไล่ตามความสำเร็จและอยากหาสมดุลระหว่างงานกับความสุขในใจ</p>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-aos="fade-up">
+        <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+          <div class="card-body p-4">
+            <div class="fs-2 mb-2">🌱</div>
+            <h3 class="h5 fw-bold">ต้องมีพื้นฐานมาก่อนไหม?</h3>
+            <p class="text-secondary mb-0">ไม่ต้องมีเลย หนังสือเล่าเป็นนิทาน อ่านง่าย ยาวประมาณ 224 หน้า ไม่ต้องเคยรู้จักปรัชญาตะวันออกหรือฝึกสมาธิมาก่อนก็อ่านเข้าใจ</p>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-aos="fade-up">
+        <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+          <div class="card-body p-4">
+            <div class="fs-2 mb-2">🎁</div>
+            <h3 class="h5 fw-bold">อ่านแล้วได้อะไรกลับไปบ้าง?</h3>
+            <p class="text-secondary mb-0">ได้แนวทาง 7 ข้อที่ค่อย ๆ ลองทำตามได้ เช่น ฝึกดูแลความคิด ตั้งเป้าหมาย พัฒนาตัวเองทีละนิดแบบ Kaizen มีวินัย และรู้จักใช้เวลาให้คุ้มค่า แนวคิดเรื่องการบริหารเวลาและการอยู่กับปัจจุบันอาจช่วยให้เราเห็นสิ่งสำคัญในชีวิตชัดขึ้น โดยเฉพาะในวันที่รู้สึกหมดไฟในการทำงาน</p>
+          </div>
+        </article>
+      </div>
         </div>
       </div>
     </section>
@@ -146,7 +337,7 @@
             <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">
               STORY
             </span>
-            <h2 class="display-6 fw-bold mb-4">เมื่อความสำเร็จ<br>ไม่ใช่คำตอบของทุกอย่าง</h2>
+            <h2 class="display-6 fw-bold mb-4">มีทุกอย่างแล้ว แต่ทำไมยังไม่มีความสุข? เรื่องราวของการกลับมาหาความหมายในชีวิต</h2>
 
             <p class="fs-5 text-secondary">
               <strong class="text-dark">Julian Mantle</strong> ทนายความระดับท็อปผู้มั่งคั่ง
@@ -162,14 +353,16 @@
             </p>
 
             <a href="#virtues" class="btn btn-dark rounded-pill px-4 mt-2">
-              →
+              ดู 7 หลักปรัชญาชีวิต →
             </a>
           </div>
 
           <div class="col-lg-5">
             <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
               <div class="position-relative">
-                <img src="images/qa.jpg" alt="" class="card-img-top object-fit-cover" style="height:260px">
+                <div class="ratio ratio-16x9">
+                  <img src="images/qa.jpg" alt="" loading="lazy" class="card-img-top object-fit-cover">
+                </div>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                 <div class="position-absolute bottom-0 start-0 p-4 text-white">
                   <div class="fs-1">?</div>
@@ -216,8 +409,9 @@
           <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">
             THE 7 VIRTUES
           </span>
-          <h2 class="display-6 fw-bold mb-3">7 หลักปรัชญาเปลี่ยนชีวิต</h2>
-          <p class="text-secondary">แนวคิดสำคัญที่สามารถนำมาปรับใช้ในชีวิตประจำวัน</p>
+          <h2 class="display-6 fw-bold mb-3">7 หลักปรัชญาชีวิตที่ชวนให้กลับมามองสิ่งสำคัญ</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
+          <p class="text-secondary">7 หลักปรัชญาชีวิตเหล่านี้ไม่จำเป็นต้องทำให้ได้ทั้งหมดในวันเดียว ลองเลือกข้อที่เข้ากับชีวิตตอนนี้ แล้วค่อย ๆ นำไปปรับใช้ทีละอย่าง</p>
         </div>
 
         <div class="row g-4">
@@ -226,7 +420,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">01</span>
-                <h3 class="h5 fw-bold">Master Your Mind</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">🧠</span>Master Your Mind</h3>
                 <p class="text-secondary mb-0">
                   ฝึกจิตให้ทรงพลัง: จิตใจเหมือนสวนดอกไม้
                   ต้องคอยดูแล ไม่ปล่อยให้ความคิดลบเข้ามาทำลาย
@@ -239,7 +433,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">02</span>
-                <h3 class="h5 fw-bold">Follow Your Purpose</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">🎯</span>Follow Your Purpose</h3>
                 <p class="text-secondary mb-0">
                   ดำเนินชีวิตตามเป้าหมาย: ค้นหาพันธกิจของชีวิต
                   (Dharma) และทำตามสิ่งนั้นด้วยความมุ่งมั่น
@@ -252,7 +446,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">03</span>
-                <h3 class="h5 fw-bold">Practice Kaizen</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">🌱</span>Practice Kaizen</h3>
                 <p class="text-secondary mb-0">
                   ฝึกฝนและพัฒนาตนเองอย่างต่อเนื่อง:
                   ปรับปรุงตนเองในทุกมิติ ทั้งกาย จิตใจ และความคิด วันละเล็กน้อย
@@ -265,7 +459,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">04</span>
-                <h3 class="h5 fw-bold">Live with Discipline</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">💪</span>Live with Discipline</h3>
                 <p class="text-secondary mb-0">
                   มีวินัยในตนเอง: วินัยคือสะพานเชื่อมระหว่างเป้าหมายและความสำเร็จ
                 </p>
@@ -277,7 +471,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">05</span>
-                <h3 class="h5 fw-bold">Respect Your Time</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">⏳</span>Respect Your Time</h3>
                 <p class="text-secondary mb-0">
                   เคารพและบริหารเวลา: เวลาเป็นสิ่งมีค่า
                   ใช้เวลากับสิ่งสำคัญจริง ๆ
@@ -290,7 +484,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">06</span>
-                <h3 class="h5 fw-bold">Selflessly Serve Others</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">🤝</span>Selflessly Serve Others</h3>
                 <p class="text-secondary mb-0">
                   รับใช้ผู้อื่นด้วยความจริงใจ:
                   คุณค่าของชีวิตวัดได้จากสิ่งที่คุณมอบให้ผู้อื่น
@@ -303,7 +497,7 @@
             <div class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4">
               <div class="card-body p-4">
                 <span class="badge text-bg-warning rounded-pill mb-3">07</span>
-                <h3 class="h5 fw-bold">Embrace the Present</h3>
+                <h3 class="h5 fw-bold"><span class="me-2" aria-hidden="true">🕊️</span>Embrace the Present</h3>
                 <p class="text-secondary mb-0">
                   อยู่กับปัจจุบัน: ความสุขไม่ได้อยู่ที่จุดหมาย
                   แต่อยู่ที่การเดินทางในทุก ๆ วัน
@@ -322,7 +516,7 @@
           <div class="col-lg-7">
             <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">BOOK
               SUMMARY</span>
-            <h2 class="display-6 fw-bold mb-4">หนังสือที่อาจเปลี่ยนมุมมองชีวิตของคุณ</h2>
+            <h2 class="display-6 fw-bold mb-4">เรื่องราวที่ชวนให้กลับมามองสิ่งสำคัญในชีวิต</h2>
             <p class="lead text-secondary mb-4">
               The Monk Who Sold His Ferrari ไม่ได้พูดถึงเพียงความสำเร็จ
               แต่ชวนให้เราหยุดถามตัวเองว่า “ชีวิตที่กำลังใช้ในวันนี้ คือชีวิตที่เราอยากใช้จริง ๆ หรือไม่?”
@@ -351,7 +545,7 @@
                 <div class="d-flex gap-3">
                   <div class="fs-2 text-warning">⏳</div>
                   <div>
-                    <h3 class="h6 fw-bold">เห็นคุณค่าของเวลา</h3>
+                    <h3 class="h6 fw-bold">เห็นคุณค่าของเวลาและการบริหารเวลา</h3>
                     <p class="small text-secondary mb-0">ใช้เวลาแต่ละวันกับสิ่งที่มีความหมาย</p>
                   </div>
                 </div>
@@ -379,10 +573,10 @@
           </div>
 
           <div class="col-lg-5 text-center">
-            <div class="position-relative d-inline-block">
+            <div class="position-relative d-inline-block col-8 col-md-6 col-lg-10">
               <div class="p-3 bg-warning-subtle rounded-5 shadow">
-                <img src="images/coverMonk.webp" alt="The Monk Who Sold His Ferrari" class="img-fluid rounded-4"
-                  style="max-height:520px">
+                <img src="images/coverMonk.webp" alt="ปกหนังสือ The Monk Who Sold His Ferrari โดย Robin Sharma" loading="lazy"
+                  class="img-fluid rounded-4">
               </div>
               <span
                 class="position-absolute bottom-0 start-50 translate-middle-x translate-middle-y badge bg-dark rounded-pill px-4 py-2 shadow">
@@ -397,16 +591,17 @@
     </section>
 
     <!-- WHY -->
-    <section id="why-this-book" class="py-5 bg-white">
+    <section id="why-this-book" class="py-5 bg-light">
       <div class="container py-lg-5">
         <div class="text-center mb-5">
           <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">WHY THIS BOOK?</span>
-          <h2 class="display-6 fw-bold">ทำไมหนังสือเล่มนี้จึงควรหยิบมาอ่าน</h2>
+          <h2 class="display-6 fw-bold">4 เหตุผลที่หนังสือเล่มนี้อาจคุ้มค่าแก่การอ่าน</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="col">
-            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white" data-lift>
               <div class="display-4 mb-3">🧭</div>
               <h3 class="h5 fw-bold">เตือนสติเรื่องความสำเร็จที่แท้จริง</h3>
               <p class="text-secondary mb-0">ช่วยให้เราหยุดคิดว่าวัตถุ ความร่ำรวย และตำแหน่งหน้าที่
@@ -415,16 +610,16 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white" data-lift>
               <div class="display-4 mb-3">🧘🏻‍♂️</div>
-              <h3 class="h5 fw-bold">เข้าใจง่ายและปรับใช้ได้จริง</h3>
+              <h3 class="h5 fw-bold">เล่าเรื่องเข้าใจง่าย ไม่ใช่ตำราหนัก ๆ</h3>
               <p class="text-secondary mb-0">ถ่ายทอดผ่านนิทานเปรียบเทียบและสัญลักษณ์ง่าย ๆ
                 ทำให้เห็นภาพและนำแนวคิดไปใช้ได้</p>
             </div>
           </div>
 
           <div class="col">
-            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white" data-lift>
               <div class="display-4 mb-3">🌱</div>
               <h3 class="h5 fw-bold">เป็นคู่มือในการทำ Kaizen</h3>
               <p class="text-secondary mb-0">เน้นการปรับปรุงตัวเองทีละเล็กทีละน้อย ผ่านการควบคุมความคิด วินัย
@@ -433,14 +628,55 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white" data-lift>
               <div class="display-4 mb-3">❤️‍🩹</div>
-              <h3 class="h5 fw-bold">ช่วยเยียวยาจิตใจจาก Burnout</h3>
-              <p class="text-secondary mb-0">ชวนผู้ที่เครียด หมดไฟ หรือหลงทาง
-                กลับมาโฟกัสกับปัจจุบันและการแบ่งปันเพื่อผู้อื่น</p>
+              <h3 class="h5 fw-bold">ชวนให้กลับมาดูแลตัวเองเมื่อเหนื่อยล้า</h3>
+              <p class="text-secondary mb-0">ถ้าทำงานหนักจนหมดไฟในการทำงาน หนังสือชวนให้หยุดพัก กลับมาโฟกัสกับปัจจุบัน และหาเป้าหมายใหม่ให้ชีวิต</p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- BURNOUT: keyword หลัก "หมดไฟในการทำงาน" -->
+    <section id="burnout" class="py-5 bg-white" aria-labelledby="burnout-title">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">BURNOUT</span>
+          <h2 id="burnout-title" class="display-6 fw-bold mb-3">ช่วงที่หมดไฟในการทำงาน ลองเริ่มดูแลตัวเองจากเรื่องเล็ก ๆ 3 อย่าง</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
+          <p class="text-secondary col-lg-8 mx-auto">บางครั้งการทำงานต่อเนื่องโดยไม่ได้พักทำให้เราเหนื่อยทั้งกายและใจ หากกำลังรู้สึกแบบนั้น ลองเริ่มจากเรื่องเล็ก ๆ ที่ทำได้จริง โดยไม่ต้องกดดันตัวเองให้เปลี่ยนทุกอย่างในทันที</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col" data-aos="fade-up" data-aos-delay="0">
+            <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🌙</div>
+                <h3 class="h5 fw-bold">หยุดพักด้วย Ritual of Solitude</h3>
+                <p class="text-secondary mb-0">แบ่งเวลา 10–15 นาทีต่อวันอยู่กับตัวเองเงียบ ๆ ให้ใจได้พักจากงานและหน้าจอ แล้วจดสิ่งที่รู้สึกไว้</p>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="120">
+            <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🌹</div>
+                <h3 class="h5 fw-bold">ตั้งสติด้วย Heart of the Rose</h3>
+                <p class="text-secondary mb-0">นั่งนิ่ง ๆ จดจ่อกับดอกไม้ เทียน หรือลมหายใจประมาณ 5 นาที ถ้าความคิดฟุ้งซ่านก็พากลับมาที่จุดเดิม</p>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="240">
+            <article class="card h-100 border-0 border-top border-4 border-warning shadow-sm rounded-4" data-lift>
+              <div class="card-body p-4">
+                <div class="fs-2 mb-2" aria-hidden="true">🌱</div>
+                <h3 class="h5 fw-bold">ค่อย ๆ ฟื้นด้วย Kaizen</h3>
+                <p class="text-secondary mb-0">ไม่ต้องเปลี่ยนชีวิตทั้งหมดในวันเดียว เลือกปรับเรื่องเล็ก ๆ วันละนิด เช่น เข้านอนเร็วขึ้น 15 นาที</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="small text-secondary text-center mt-4 mb-0">หนังสือเล่มนี้เป็นแนวทางพัฒนาตนเอง ไม่ใช่การรักษาทางการแพทย์ หากรู้สึกเหนื่อยล้าหรือเครียดมากจนกระทบชีวิตประจำวัน ควรปรึกษาผู้เชี่ยวชาญด้านสุขภาพจิต</p>
       </div>
     </section>
 
@@ -449,6 +685,7 @@
       <img src="images/Himalai.webp" alt="" aria-hidden="true"
         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
       <div class="position-relative container py-5">
+        <h2 class="visually-hidden">คำคมแรงบันดาลใจ</h2>
 
         <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner text-center">
@@ -506,11 +743,13 @@
       <div class="container py-lg-5">
         <div class="text-center mb-5">
           <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">BOOK OVERVIEW</span>
-          <h2 class="display-6 fw-bold">ข้อมูลหนังสือ</h2>
+          <h2 class="display-6 fw-bold">ข้อมูลหนังสือก่อนตัดสินใจอ่าน</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
         </div>
 
         <div class="table-responsive shadow-sm rounded-4 overflow-hidden">
           <table class="table table-hover table-bordered align-middle mb-0 bg-white">
+            <caption class="visually-hidden">ข้อมูลหนังสือ The Monk Who Sold His Ferrari ผู้เขียน ประเภท และจำนวนหน้า</caption>
             <tbody>
               <tr>
                 <th class="p-3 p-lg-4 bg-warning-subtle w-25">ชื่อหนังสือ</th>
@@ -544,7 +783,8 @@
         <div class="text-center mb-5">
           <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">ABOUT THE
             AUTHOR</span>
-          <h2 class="display-6 fw-bold">เกี่ยวกับ Robin S. Sharma</h2>
+          <h2 class="display-6 fw-bold">รู้จัก Robin Sharma ผู้เขียนที่ชวนให้เรากลับมาพัฒนาตัวเอง</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
         </div>
 
         <div class="row justify-content-center">
@@ -554,7 +794,7 @@
                 <div class="col-md-4 bg-dark text-white text-center p-5">
                   <div class="display-1 mb-3">✍️</div>
                   <h3 class="h4 fw-bold">Robin S. Sharma</h3>
-                  <p class="text-white-50 mb-0">Author & Leadership Speaker</p>
+                  <p class="text-white opacity-75 mb-0">Author & Leadership Speaker</p>
                 </div>
                 <div class="col-md-8 p-4 p-lg-5">
                   <p class="text-secondary fs-6">
@@ -584,7 +824,7 @@
               <div class="card-body p-4 p-lg-5 text-center">
                 <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">BOOK
                   REVIEW</span>
-                <h2 class="display-6 fw-bold text-dark mb-3">รีวิว</h2>
+                <h2 class="display-6 fw-bold text-dark mb-3">อ่านจบแล้วได้ข้อคิดอะไรบ้าง?</h2>
 
                 <div class="fs-2 mb-4 text-warning">
                   ⭐⭐⭐⭐<span class="text-secondary">☆</span>
@@ -594,8 +834,8 @@
                 <h4 class="fw-bold text-dark mb-3">เหมาะกับใคร?</h4>
                 <div class="row g-3 text-start justify-content-center">
                   <div class="col-md-4">
-                    <div class="p-3 bg-light rounded-4 text-dark">⭐ ผู้ที่รู้สึกตกอยู่ในสภาวะ Burnout
-                      หรือกลุ่มที่เกิดความเครียดเรื้อรัง</div>
+                    <div class="p-3 bg-light rounded-4 text-dark">⭐ ผู้ที่หมดไฟในการทำงาน
+                      หรือรู้สึกเครียดสะสม</div>
                   </div>
                   <div class="col-md-4">
                     <div class="p-3 bg-light rounded-4 text-dark">⭐ คนที่ทำงานหนักจนลืมดูแลสุขภาพ</div>
@@ -612,77 +852,176 @@
       </div>
     </section>
 
+    <!-- RESOURCES: ลิงก์ไปยังเว็บไซต์อื่นที่มีเนื้อหาคล้ายกัน -->
+    <section id="resources" class="py-5 bg-light">
+      <div class="container py-lg-4">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">READ MORE</span>
+          <h2 class="display-6 fw-bold mb-3">อยากรู้จักผู้เขียนและแนวคิดเพิ่มเติม?</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
+          <p class="text-secondary">แหล่งข้อมูลภายนอกที่เกี่ยวกับ The Monk Who Sold His Ferrari, Robin Sharma และแนวคิด Kaizen</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group shadow-sm rounded-4 overflow-hidden">
+          <a href="https://en.wikipedia.org/wiki/The_Monk_Who_Sold_His_Ferrari" class="list-group-item list-group-item-action py-3" target="_blank" rel="noopener noreferrer">
+            <span class="fw-semibold d-block">The Monk Who Sold His Ferrari (Wikipedia) <i class="bi bi-box-arrow-up-right small" aria-hidden="true"></i></span>
+            <span class="small text-secondary">ภาพรวมและเรื่องย่อของหนังสือ</span>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Robin_Sharma" class="list-group-item list-group-item-action py-3" target="_blank" rel="noopener noreferrer">
+            <span class="fw-semibold d-block">Robin Sharma (Wikipedia) <i class="bi bi-box-arrow-up-right small" aria-hidden="true"></i></span>
+            <span class="small text-secondary">ประวัติและผลงานของผู้เขียน</span>
+          </a>
+          <a href="https://www.robinsharma.com/" class="list-group-item list-group-item-action py-3" target="_blank" rel="noopener noreferrer">
+            <span class="fw-semibold d-block">เว็บไซต์ Robin Sharma <i class="bi bi-box-arrow-up-right small" aria-hidden="true"></i></span>
+            <span class="small text-secondary">เว็บไซต์ของผู้เขียน เรื่องการพัฒนาตนเองและภาวะผู้นำ</span>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Kaizen" class="list-group-item list-group-item-action py-3" target="_blank" rel="noopener noreferrer">
+            <span class="fw-semibold d-block">Kaizen (Wikipedia) <i class="bi bi-box-arrow-up-right small" aria-hidden="true"></i></span>
+            <span class="small text-secondary">ทำความรู้จักแนวคิด Kaizen หนึ่งใน 7 หลักปรัชญาของหนังสือ</span>
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </main>
-  <!-- FAQ -->
+    <!-- FAQ -->
   <section id="faq" class="py-5 bg-white">
     <div class="container py-lg-5">
       <div class="text-center mb-5">
         <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis px-3 py-2 mb-3">FAQ</span>
-        <h2 class="display-6 fw-bold">คำถามที่พบบ่อย</h2>
+        <h2 class="display-6 fw-bold">คำถามที่หลายคนอยากรู้ก่อนอ่านหนังสือเล่มนี้</h2>
+          <hr class="col-3 col-md-2 col-lg-1 mx-auto mt-0 mb-3 border-warning border-3 opacity-100 rounded-pill">
       </div>
 
       <div class="accordion shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-              เทคนิค “Heart of the Rose” ทำอย่างไรในชีวิตประจำวัน?
+          <h3 class="accordion-header">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              7 หลักปรัชญาชีวิตใน The Monk Who Sold His Ferrari มีอะไรบ้าง?
             </button>
-          </h2>
+          </h3>
           <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
             <div class="accordion-body text-secondary">
-              ทำได้ง่าย ๆ โดยการนั่งนิ่ง ๆ แล้วจดจ่ออยู่กับสิ่งใดสิ่งหนึ่ง เช่น ดอกไม้ เทียน หรือแม้แต่ลมหายใจวันละ 5
-              นาที
-              หากมีความคิดลบหรือเรื่องเครียดเข้ามา ให้ค่อย ๆ ดึงความสนใจกลับมาที่จุดเดิม
+              มี Master Your Mind (ฝึกจิตให้ทรงพลัง), Follow Your Purpose (ใช้ชีวิตตามเป้าหมาย), Practice Kaizen (พัฒนาตัวเองต่อเนื่อง), Live with Discipline (มีวินัย), Respect Your Time (เคารพเวลา), Selflessly Serve Others (แบ่งปันผู้อื่น) และ Embrace the Present (อยู่กับปัจจุบัน)
             </div>
           </div>
         </div>
-
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h3 class="accordion-header">
             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faq2">
-              มีวิธีรับมือกับความเครียดและความคิดลบอย่างไร?
+              data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+              หมดไฟในการทำงาน อ่านหนังสือเล่มนี้ช่วยได้จริงไหม?
             </button>
-          </h2>
+          </h3>
+          <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary">
+              หนังสือให้แนวคิดและวิธีฝึกเล็ก ๆ ที่ช่วยให้พักและตั้งหลักได้ เช่น Ritual of Solitude และ Kaizen แต่ไม่ใช่การรักษาทางการแพทย์ ถ้าเหนื่อยล้าหรือเครียดมากจนกระทบชีวิตประจำวัน ควรปรึกษาผู้เชี่ยวชาญด้วย
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              The Monk Who Sold His Ferrari เป็นเรื่องจริงหรือนิยาย?
+            </button>
+          </h3>
           <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body text-secondary">
-              ใช้เทคนิค “Opposomatic” หรือการสลับความคิด เมื่อรู้ตัวว่ากำลังคิดลบ ให้หยุดความคิดนั้น
-              แล้วเปิดความคิดเชิงบวกหรือสิ่งที่คุณรู้สึกขอบคุณขึ้นมาแทนที่
+              เป็นนิทานเปรียบเทียบ (Fable) ที่ผู้เขียนแต่งขึ้น Julian Mantle เป็นตัวละครสมมติ แต่แนวคิดในเล่มลองนำไปใช้กับชีวิตจริงได้
             </div>
           </div>
         </div>
-
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h3 class="accordion-header">
             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faq3">
-              จะรักษาความต่อเนื่องและป้องกันไม่ให้หมดไฟได้อย่างไร?
+              data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              Kaizen คืออะไร และเกี่ยวกับหนังสือเล่มนี้อย่างไร?
             </button>
-          </h2>
+          </h3>
           <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body text-secondary">
-              ให้ความสำคัญกับ “Ritual of Solitude” หรือการจัดเวลาอยู่กับตัวเองเงียบ ๆ วันละ 10–15 นาที
-              เพื่อทบทวนเป้าหมายชีวิตและเขียนบันทึกประจำวัน
+              Kaizen เป็นแนวคิดจากญี่ปุ่น แปลว่าการปรับปรุงให้ดีขึ้นทีละนิดอย่างต่อเนื่อง ในหนังสือใช้กับทั้งร่างกาย จิตใจ และความคิด ขอแค่ดีขึ้นกว่าเมื่อวานนิดเดียวก็พอ
             </div>
           </div>
         </div>
-
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h3 class="accordion-header">
             <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faq4">
-              ถ้าอยากสร้างวินัยแบบ Robin Sharma แต่ไม่มีเวลาตื่นตี 5 ควรทำอย่างไร?
+              data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              เทคนิค “Heart of the Rose” ทำอย่างไรในชีวิตประจำวัน?
             </button>
-          </h2>
+          </h3>
           <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body text-secondary">
-              ไม่จำเป็นต้องตื่นตี 5 ทันที ให้เริ่มจากการตื่นเร็วขึ้นกว่าเวลาปกติเพียง 15–30 นาที
-              แล้วใช้เวลานั้นทำกิจกรรมเพื่อพัฒนาตนเอง เช่น อ่านหนังสือ ออกกำลังกาย หรือนั่งสงบสติอารมณ์
+              ทำได้ง่าย ๆ ลองนั่งนิ่ง ๆ แล้วมองดอกไม้ เทียน หรือแค่ตามลมหายใจวันละประมาณ 5 นาที ถ้ามีความคิดลบหรือเรื่องเครียดโผล่เข้ามา ก็ค่อย ๆ พาความสนใจกลับมาที่จุดเดิม
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+              รับมือกับความเครียดและความคิดลบได้อย่างไร?
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary">
+              ลองใช้เทคนิค “Opposomatic” คือสลับความคิดทันทีที่รู้ตัวว่ากำลังคิดลบ ให้หยุด แล้วหันไปนึกถึงเรื่องดี ๆ หรือสิ่งที่รู้สึกขอบคุณแทน
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+              ป้องกันการหมดไฟในการทำงานและรักษาความต่อเนื่องได้อย่างไร?
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary">
+              ลองทำ “Ritual of Solitude” คือแบ่งเวลา 10–15 นาทีต่อวันอยู่กับตัวเองเงียบ ๆ ทบทวนเป้าหมายชีวิต แล้วจดบันทึกไว้ จะช่วยให้ไม่หลงทางและมีแรงไปต่อ
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+              อยากมีวินัยแบบ Robin Sharma แต่ตื่นตี 5 ไม่ไหว ควรทำอย่างไร?
+            </button>
+          </h3>
+          <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-secondary">
+              ไม่ต้องรีบตื่นตี 5 ก็ได้ เริ่มจากตื่นเร็วขึ้นแค่ 15–30 นาที แล้วใช้เวลานั้นอ่านหนังสือ ออกกำลังกาย หรือนั่งสงบใจ โดยยังไม่ต้องหยิบมือถือขึ้นมาดู
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- แหล่งข้อมูลภายนอกที่เกี่ยวข้อง -->
+  <section class="py-5 bg-white" aria-labelledby="relatedResources">
+    <div class="container">
+      <h2 id="relatedResources" class="h4 fw-bold mb-3">แหล่งข้อมูลที่น่าสนใจ</h2>
+      <p class="text-secondary">หากต้องการศึกษาเรื่องการดูแลใจและการพัฒนาตนเองเพิ่มเติม สามารถอ่านข้อมูลจากแหล่งต่อไปนี้</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item px-0">
+          <a href="https://www.who.int/news-room/questions-and-answers/item/mental-health-at-work" target="_blank" rel="noopener noreferrer">องค์การอนามัยโลก (WHO): สุขภาพจิตในการทำงาน</a>
+        </li>
+        <li class="list-group-item px-0">
+          <a href="https://www.robinsharma.com/" target="_blank" rel="noopener noreferrer">เว็บไซต์ Robin Sharma</a>
+        </li>
+        <li class="list-group-item px-0">
+          <a href="https://pixabay.com/th/" target="_blank" rel="noopener noreferrer">Pixabay: แหล่งภาพประกอบ</a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -692,34 +1031,38 @@
       <div class="row g-4">
         <div class="col-md-6">
           <h2 class="h4 fw-bold">Mindful Book</h2>
-          <p class="text-white-50 mb-0">เว็บไซต์แนะนำหนังสือเพื่อการพัฒนาตนเองและการค้นหาความหมายของชีวิต</p>
+          <p class="text-white opacity-75 mb-0">เว็บไซต์สรุปและแนะนำหนังสือพัฒนาตนเอง The Monk Who Sold His Ferrari พร้อม 7 หลักปรัชญาชีวิต</p>
         </div>
 
         <div class="col-md-6 text-md-end">
           <p class="mb-2">จัดทำโดย: รัตนาวดี วิชาเกวียน 670510841</p>
-          <a href="https://pixabay.com/th/" class="text-white-50 small mb-0" target="_blank"
+          <a href="https://pixabay.com/th/" class="text-white opacity-75 small mb-0" target="_blank"
             rel="noopener noreferrer">รูปภาพจาก Pixabay.com</a>
         </div>
       </div>
       <hr class="border-secondary my-4">
       <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
-        <small class="text-white-50">Copyright © 2026 Web Technology for information Project</small>
+        <small class="text-white opacity-75">Copyright © 2026 Web Technology for information Project</small>
         <a href="#home" class="text-warning text-decoration-none fw-semibold">กลับขึ้นด้านบน ↑</a>
       </div>
     </div>
   </footer>
 
+  <!-- ปุ่มกลับขึ้นด้านบน -->
+  <button type="button" id="toTop"
+    class="btn btn-dark rounded-circle position-fixed bottom-0 end-0 m-3 m-md-4 shadow d-none d-flex align-items-center justify-content-center p-0"
+    aria-label="กลับขึ้นด้านบน"><i class="bi bi-arrow-up fs-5"></i></button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({once: true});
-
+    if (window.AOS) AOS.init({ once: true });
     // ---- ธีมสี: เปลี่ยนค่าตัวแปร CSS ของ Bootstrap ด้วย JavaScript ----
     (function () {
       const root = document.documentElement.style;
       const rgb = h => {const n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255].join(',');};
       const colors = {
-        'dark': '#332D32', 'light': '#F4ECDF', 'secondary': '#6E6268',
+        'dark': '#332D32', 'light': '#F4ECDF', 'secondary': '#554A51',
         'primary': '#C8923B', 'warning': '#C8923B',
         'body-bg': '#FBF7F0', 'body-color': '#332D32',
         'tertiary-bg': '#F4ECDF', 'secondary-bg': '#EADFCB',
@@ -760,6 +1103,68 @@
     mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       if (mainNav.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(mainNav).hide();
     }));
+
+    // ---- เลื่อนไปยังหัวข้อโดยไม่ให้แถบเมนู (sticky) บังเนื้อหา ----
+    const navBar = document.getElementById('mainNavbar');
+    const setScrollPad = () => {document.documentElement.style.scrollPaddingTop = navBar.offsetHeight + 'px';};
+    setScrollPad();
+    window.addEventListener('resize', setScrollPad);
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ---- แถบความคืบหน้าการอ่าน + ปุ่มกลับขึ้นบน ----
+    const prog = document.getElementById('readProgress');
+    const progBar = prog.firstElementChild;
+    const toTop = document.getElementById('toTop');
+    prog.style.height = '4px';
+    Object.assign(toTop.style, {width: '48px', height: '48px', zIndex: '1030'});
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? Math.min(100, window.scrollY / max * 100) : 0;
+      progBar.style.width = pct + '%';
+      prog.setAttribute('aria-valuenow', Math.round(pct));
+      toTop.classList.toggle('d-none', window.scrollY < 600);
+    };
+    window.addEventListener('scroll', onScroll, {passive: true});
+    onScroll();
+    toTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: reduceMotion ? 'auto' : 'smooth'}));
+
+    // ---- ตัวเลขสถิตินับขึ้นเมื่อเลื่อนมาถึง ----
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const end = parseFloat(el.dataset.count), dec = Number(el.dataset.decimals || 0), suf = el.dataset.suffix || '';
+      const fmt = v => v.toFixed(dec) + suf;
+      if (reduceMotion) return;
+      el.textContent = fmt(0);
+      new IntersectionObserver((entries, obs) => entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        obs.unobserve(el);
+        const t0 = performance.now(), dur = 1400;
+        const step = now => {
+          const p = Math.min((now - t0) / dur, 1);
+          el.textContent = fmt(end * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }), {threshold: 0.6}).observe(el);
+    });
+
+    // ---- ปกหนังสือลอยเบา ๆ ในหน้า Hero ----
+    const cover = document.getElementById('heroCover');
+    if (cover && !reduceMotion) {
+      cover.animate([{transform: 'translateY(0)'}, {transform: 'translateY(-12px)'}, {transform: 'translateY(0)'}],
+        {duration: 4500, iterations: Infinity, easing: 'ease-in-out'});
+    }
+
+    // ---- ไฮไลต์เมนูตามหัวข้อที่กำลังอ่าน ----
+    const navLinks = [...document.querySelectorAll('#mainNav .nav-link')];
+    const setActive = id => navLinks.forEach(a => {
+      const on = a.getAttribute('href') === '#' + id;
+      a.classList.toggle('fw-bold', on);
+      a.classList.toggle('text-warning-emphasis', on);
+    });
+    const spy = new IntersectionObserver(es => es.forEach(e => {if (e.isIntersecting) setActive(e.target.id);}),
+      {rootMargin: '-45% 0px -50% 0px'});
+    navLinks.forEach(a => {const t = document.querySelector(a.getAttribute('href')); if (t) spy.observe(t);});
   </script>
 </body>
 

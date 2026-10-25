@@ -1,38 +1,123 @@
-h1 {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
+/* custom.css — ฟอนต์ ขนาดตัวอักษร และสีตัวอักษร
+   โหลดต่อจาก css/style.css เพื่อให้มีผลเหนือกฎเดิม */
+
+:root {
+  --font-head: 'Prompt', 'Noto Sans Thai', sans-serif;
+  --font-body: 'Sarabun', 'Noto Sans Thai', sans-serif;
+  --bs-body-font-family: var(--font-body);
+  --bs-body-font-size: 1.0625rem;
+  --bs-body-line-height: 1.8;
+  --bs-heading-color: #2A2428;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #2A2428;
+}
+
+body p,
+body h4,
+body h5,
+body h6,
+body li,
+body td,
+body th {
+  font-family: var(--font-body);
+}
+
+body h1,
+body h2,
+body h3,
+body .Chonburi,
+body .navbar-brand,
+body .badge,
+body .btn {
+  font-family: var(--font-head);
   font-style: normal;
-  color: white;
 }
 
-.nav-bg {
-  background-color: aliceblue;
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.4;
+  text-wrap: balance;
+  letter-spacing: 0;
 }
 
-.button-bg {
-  background-color: white;
-
+h2 {
+  color: #2A2428;
 }
-p,h4,h5,h7 {
-  font-family: "Bai Jamjuree", sans-serif;
+
+h3 {
+  color: #2A2428;
+}
+
+#home h1.display-2 {
+  font-weight: 700;
+  font-size: clamp(1.9rem, 1rem + 3.4vw, 3.4rem);
+}
+
+h2.display-6 {
+  font-size: clamp(1.5rem, 1.05rem + 1.7vw, 2.2rem);
+}
+
+.lead {
   font-weight: 400;
-  font-style: normal;
+  font-size: 1.2rem;
 }
 
-h2,h3 {
-  font-family: "Chonburi", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #332D32;
+.small,
+small {
+  font-size: .95em;
+}
+
+p {
+  max-width: 68ch;
+}
+
+.text-center p,
+p.text-center,
+.text-md-end p,
+p.text-md-end,
+.d-flex p,
+.card p,
+td p {
+  max-width: none;
+}
+
+.badge {
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+.accordion-button {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.accordion-body {
+  font-size: 1.05rem;
+}
+
+.navbar .nav-link {
+  color: #2A2428;
+  font-size: .98rem;
+}
+
+.navbar .nav-link:hover {
+  color: #8A5A12;
 }
 
 .Chonburi {
-font-family: "Chonburi",
-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
-ิbody {
-background-color: aliceblue;
+/* ตัวอักษรบนพื้นเข้ม ต้องเป็นสีขาวเสมอ (style.css เดิมบังคับ h2/h3 เป็นสีเข้ม) */
+.text-white :is(h1, h2, h3, h4, h5, h6),
+footer :is(h1, h2, h3, h4, h5, h6),
+.bg-dark :is(h1, h2, h3, h4, h5, h6):not(.text-dark) {
+  color: #fff;
 }
